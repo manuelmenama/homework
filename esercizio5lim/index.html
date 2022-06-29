@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <!-- metto il link del font ubuntu utilizzando google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+    <title>Ex. Scooter Lim</title>
+  </head>
+  <body>
+    <!-- creo un primo corpo nero in trasparenza -->
+    <div class="blackspace">
+      <!-- in un secondo div inserisco un container invisibile che da delle regole al contenuto -->
+      <div class="container">
+        <header>
+          <!-- logo e titolo in in un div per controllare le sue caratteristiche -->
+          <img class="logo" src="img/logo.png" alt="logo_lim">
+          <div>Taking Booleaner from A to B</div>
+        </header>
+
+        <nav>
+          <!-- nel nav inserisco 3 button -->
+          <div>
+            <button type="button" name="button">Prenota</button>
+            <button type="button" name="button">Termina prenotazione</button>
+            <button type="button" name="button">Accendi luci</button>
+          </div>
+        </nav>
+
+        <main>
+          <!-- in un section inserisco le info di ogni singolo monopattino -->
+          <!-- in una prima versione avevo utilizzato un div di classe "mono" -->
+          <section>
+            <div>
+              <input type="checkbox">
+              <h3>Monopattino Lemon22</h3>
+            </div>
+            <div>
+              <span class="arrow"></span>
+              <span>Via Dei Macellai - a 300 metri da te</span>
+            </div>
+            <div>Stato carica:</div>
+            <div class="bar barra1"> </div>
+          </section>
+
+          <section>
+            <div>
+              <input type="checkbox">
+              <h3>Monopattino Lemon44</h3>
+            </div>
+            <div>
+              <span class="arrow"></span>
+              <span>Via Della Peste - a 450 metri da te</span>
+            </div>
+            <div>Stato carica:</div>
+            <div class="bar barra2"></div>
+          </section>
+
+          <section>
+            <div>
+              <input type="checkbox">
+              <h3>Monopattino Orange10</h3>
+            </div>
+            <div>
+              <span class="arrow"></span>
+              <span>Via Delle Locuste - a 500 metri da te.</span>
+            </div>
+            <div>Stato carica:</div>
+            <div class="bar barra3"></div>
+          </section>
+
+        </main>
+      </div>
+    </div>
+
+    <footer>
+      <!-- qui inserisco i crediti -->
+      <div>
+        From Cisterna Di Latina whith &#9829;
+      </div>
+    </footer>
+  </body>
+</html>

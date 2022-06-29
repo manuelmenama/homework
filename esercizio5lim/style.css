@@ -1,0 +1,129 @@
+/* css reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* nel body inserisco il background,
+il font, il color e anche un font size */
+body {
+  background-image: url("img/background.jpg");
+  font-family: 'Ubuntu', sans-serif;
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-size: 14px;
+  color: white;
+}
+
+/* definisco il mio spazio nero trasparente */
+.blackspace {
+  background-color: rgba(0, 0, 0, 0.4);
+  height: 85%;
+  width: 85%;
+  border-radius: 20px;
+  margin: auto;
+  margin-top: 20px;
+}
+
+/* con questo container controllo tutti gli elementi
+del corpo  */
+.container {
+  margin: auto;
+  width: 80%;
+  padding: 10% 10%;
+}
+
+/* ridimensiono e centro il logo */
+/* successivamente abbandono la centratutra
+per non far capitare il logo sul viso
+nell'immagine di background  */
+.logo {
+  display: block;
+  height: 70px;
+  /* margin: auto; */
+}
+
+/* qui controllo la scritta nell'header */
+header > div {
+  color: #00dd00;
+  font-size: 20px;
+  font-weight: bold;
+  /* text-align: center; */
+}
+
+/* qui controllo il box navigatore con i button */
+nav > div {
+  background-color: #00dd00;
+  height: 30px;
+  width: 100%;
+  margin: auto;
+  text-align: center;
+  /* avrei preferito centrare verticalmente i button
+  in modo più "automatico" ma non ne ho cavato un granché
+  guardando le documentazioni e cercando di attenermi
+  a quelli che erano gli argomenti delle lezioni */
+  padding-top: 5px;
+}
+
+/* utilizzo il main per controllare ancora la lunghezza
+massima delle barre di carica */
+main {
+   width: 80%;
+}
+
+/* trasformo il display dell'h3 in un inline-block */
+div > h3 {
+  display: inline-block;
+  margin-top: 20px
+}
+
+/* margini maggiori per il checkbox */
+div input {
+  margin: 3px 3px;
+}
+
+/* inserisco una freccia tramite css */
+.arrow::before {
+  content: "\21A6";
+}
+
+/* controllo la distanza sopra e sotto il testo, senza
+utilizzare un tag p */
+section span {
+  line-height: 2;
+}
+
+/* seguono tre barre di dimensioni differenti */
+.barra1 {
+  background-color: #f5b453;
+  height: 20px;
+  width: 40%;
+}
+
+.barra2 {
+  background-color: #1ec31e;
+  height: 20px;
+  width: 90%;
+}
+
+.barra3 {
+  background-color: #be4141;
+  height: 20px;
+  width: 20%;
+}
+
+/* utilizzo la classe bar per controllare gli spazi
+sopra e sotto in tutti e tre gli elementi */
+.bar {
+  margin-top: 5px;
+  border-radius: 5px;
+}
+
+/* ho un unico elemento e non utilizzo nessuna classe */
+footer{
+  margin-top: 3px;
+  font-size: 10px;
+  color: black;
+  text-align: center;
+}
